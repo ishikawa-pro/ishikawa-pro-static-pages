@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SNSCard from '../components/SNSCard.astro';
+import LinkProfile from '../components/LinkProfile.astro';
+import UpdateCard from '../components/UpdateCard.astro';
+
+import profile from '../data/profile.json';
+import snsLinkList from '../data/snsLinkList.json';
+import updateLinkList from '../data/updateLinkList.json';
+
+---
+<Layout title="ishikawa-pro | Link">
+	<main>
+        <div class='link-background-wrapper'>
+            <div class="link-overlay"></div>
+            <div class='link-container'>
+                <LinkProfile 
+                    name={profile.name}
+                    jobTitle={profile.jobTitle}
+                    heroImageLink={profile.heroImageLink}
+                ></LinkProfile>
+		        <ul role="list" class="link-sns-card-grid">
+                    {snsLinkList.map((snsLink) => (
+                        <SNSCard 
+                            title={snsLink.title}
+                            iconPath={snsLink.iconPath}
+                            href={snsLink.href}
+                        ></SNSCard>
+                    ))}
+                </ul>
+                <h2>Updates</h2>
+		        <ul role="list" class="link-update-card-grid">
+                    {updateLinkList.map((l) => (
+                        <UpdateCard 
+                            title={l.title}
+                            description={l.description}
+                            href={l.href}
+                            thumbnailLink={l.thumbnailLink}
+                            publishedAt={l.publishedAt}
+                        ></UpdateCard>
+                    ))}
+                </ul>
+            </div>
+        </div>
+	</main>
+</Layout>
+
+<style>
+    @media screen and (min-width: 415px) {
+    }
+    .link-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(17,21,32,0.7);
+    }
+    .link-background-wrapper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../public/profile_image.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(10px);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .link-background-wrapper {
+        position: relative;
+    }
+    .link-container {
+        position: relative;
+		margin: 0 auto;
+		background-color: #111520;
+		max-width: 414px;
+    }
+	.link-sns-card-grid {
+		padding: 0;
+        margin: 16px 24px 32px 24px;
+	}
+    .link-update-card-grid {
+		padding: 0;
+        margin: 16px 24px 0px 24px;
+        padding-bottom: 32px;
+    }
+    h2 {
+        letter-spacing: 1px;
+        line-height: 1.5;
+        margin: 16px 24px 16px 24px;
+        color: #8D9AAE;
+    }
+</style>
