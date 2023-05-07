@@ -1,22 +1,22 @@
 [
     {
       "title": "Twitter",
-      "iconPath": "sns_icons/icon_twitter.png",
+      "iconPath": "/sns_icons/icon_twitter.png",
       "href": "https://twitter.com/ishikawa__pro"
     },
     {
       "title": "Github",
-      "iconPath": "sns_icons/icon_github.png",
+      "iconPath": "/sns_icons/icon_github.png",
       "href": "https://github.com/ishikawa-pro"
     },
     {
       "title": "技術ブログ",
-      "iconPath": "sns_icons/icon_blog.png",
+      "iconPath": "/sns_icons/icon_blog.png",
       "href": "https://ishikawa-pro.hatenablog.com/"
     },
     {
       "title": "はてなブックマーク",
-      "iconPath": "sns_icons/icon_hatena.png",
+      "iconPath": "/sns_icons/icon_hatena.png",
       "href": "https://b.hatena.ne.jp/ishikawa_pro/"
     }
   ]
