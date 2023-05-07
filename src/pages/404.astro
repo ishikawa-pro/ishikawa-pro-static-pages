@@ -1,0 +1,871 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="ishikawa-pro | Link">
+	<main>
+        <div class='not_found_title'>
+            <p>404</p>
+            <p>Page Not Found</p>
+        </div>
+        <div class='code_window'>
+            <div class=code_head>
+                <svg viewBox='0 0 60 18' fill='none' xmlns='http://www.w3.org/2000/svg' class='icon'>
+                    <circle cx={6} cy={6} r={6} fill='#EC6A5E' />
+                    <circle cx={26} cy={6} r={6} fill='#F4BF4F' />
+                    <circle cx={46} cy={6} r={6} fill='#61C554' />
+                </svg>
+            </div>
+            <div class=code>
+              <p class=labelWrapper>
+                <span class=label>const</span>
+                <span class=label2> express </span>
+                <span class=label3>=</span>
+                <span class=label4> require</span>
+                <span class=label5>(</span>
+                <span class=label6>&#39;express&#39;</span>
+                <span class=label7>)</span>
+                <span class=label8>;</span>
+              </p>
+              <p class=labelWrapper>
+                <span class=label9>const</span>
+                <span class=label10> </span>
+                <span class=label11>app</span>
+                <span class=label12> </span>
+                <span class=label13>=</span>
+                <span class=label14> express</span>
+                <span class=label15>()</span>
+                <span class=label16>;</span>
+              </p>
+              <div class=textBlock>
+                <p></p>
+              </div>
+              <p class=labelWrapper>
+                <span class=label17>app</span>
+                <span class=label18>.</span>
+                <span class=label19>use</span>
+                <span class=label20>(</span>
+                <span class=label21>express</span>
+                <span class=label22>.</span>
+                <span class=label23>static</span>
+                <span class=label24>(</span>
+                <span class=label25>&#39;public&#39;</span>
+                <span class=label26>)</span>
+                <span class=label27>)</span>
+                <span class=label28>;</span>
+              </p>
+              <div class=textBlock>
+                <p></p>
+              </div>
+              <p class=labelWrapper>
+                <span class=label29>app</span>
+                <span class=label30>.</span>
+                <span class=label31>use</span>
+                <span class=label32>(</span>
+                <span class=label33>(</span>
+                <span class=label34>req</span>
+                <span class=label35>,</span>
+                <span class=label36> </span>
+                <span class=label37>res</span>
+                <span class=label38>)</span>
+                <span class=label39> </span>
+                <span class=label40>=&gt;</span>
+                <span class=label41> </span>
+                <span class=label42>&#123;</span>
+              </p>
+              <p class=labelWrapper>
+                <span class=label43> </span>
+                <span class='label44 indent'>const</span>
+                <span class=label45> </span>
+                <span class=label46>errorCode</span>
+                <span class=label47> </span>
+                <span class=label48>=</span>
+                <span class=label49> </span>
+                <span class=label50>404</span>
+                <span class=label51>;</span>
+              </p>
+              <p class=labelWrapper>
+                <span class=label52> </span>
+                <span class='label53 indent'>const</span>
+                <span class=label54> </span>
+                <span class=label55>errorMessage</span>
+                <span class=label56> </span>
+                <span class=label57>=</span>
+                <span class=label58> </span>
+                <span class=label59>&#39;ページが見つかりませんでした。&#39;</span>
+                <span class=label60>;</span>
+              </p>
+              <p class=labelWrapper>
+                <span class=label61> </span>
+                <span class='label62 indent'>res</span>
+                <span class=label63>.</span>
+                <span class=label64>status</span>
+                <span class=label65>(</span>
+                <span class=label66>errorCode</span>
+                <span class=label67>)</span>
+                <span class=label68>.</span>
+                <span class=label69>render</span>
+                <span class=label70>(</span>
+                <span class=label71>&#39;404&#39;</span>
+                <span class=label72>,</span>
+                <span class=label73> </span>
+                <span class=label74>&#123;</span>
+                <span class=label75> </span>
+                <span class=label76>errorCode</span>
+                <span class=label77>,</span>
+                <span class=label78> </span>
+                <span class=label79>errorMessage</span>
+                <span class=label80> </span>
+                <span class=label81>&#125;</span>
+                <span class=label82>)</span>
+                <span class=label83>;</span>
+              </p>
+              <p class=labelWrapper>
+                <span class=label84>&#125;</span>
+                <span class=label85>)</span>
+                <span class=label86>;</span>
+              </p>
+              <div class=textBlock>
+                <p></p>
+              </div>
+              <p class=labelWrapper>
+                <span class=label87>app</span>
+                <span class=label88>.</span>
+                <span class=label89>listen</span>
+                <span class=label90>(</span>
+                <span class=label91>3000</span>
+                <span class=label92>,</span>
+                <span class=label93> ()</span>
+                <span class=label94> </span>
+                <span class=label95>=&gt;</span>
+                <span class=label96> </span>
+                <span class=label97>&#123;</span>
+              </p>
+              <p class=labelWrapper>
+                <span class=label98> </span>
+                <span class='label99 indent'>console</span>
+                <span class=label100>.</span>
+                <span class=label101>log</span>
+                <span class=label102>(</span>
+                <span class=label103>&#39;Server is running on port 3000&#39;</span>
+                <span class=label104>)</span>
+                <span class=label105>;</span>
+              </p>
+              <p class=labelWrapper>
+                <span class=label106>&#125;</span>
+                <span class=label107>)</span>
+                <span class=label108>;</span>
+              </p>
+            </div>
+        </div>
+      </>
+    </main>
+</Layout>
+<style>
+.not_found_title {
+    margin: 40px 0;
+    text-align: center;
+    color: #8d9aad;
+    font-weight: bold;
+}
+.not_found_title p:first-child {
+    margin: 0;
+    font-size: 72px;
+    letter-spacing: 5px;
+}
+.not_found_title p:last-child {
+    margin: -16px 0 0 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+@media screen and (min-width: 415px) {
+    .code_window {
+        margin: 0 auto;
+        max-width: 421px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .code_window {
+        margin: 0 24px;
+        width: auto;
+    }
+}
+.code {
+  background-color: #242b40;
+  width: auto;
+  padding: 16px;
+  height: min-content;
+  flex-direction: column;
+}
+.labelWrapper {
+  margin: 4px 0;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  flex-shrink: 1;
+}
+.indent {
+    padding-left: 26px;
+}
+.label {
+  color: #4d93cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label2 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label3 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label4 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label5 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label6 {
+  color: #c7856f;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label7 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label8 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label9 {
+  color: #4d93cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label10 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label11 {
+  color: #48baf9;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label12 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label13 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label14 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label15 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label16 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock {
+  font-size: 16px;
+}
+.label17 {
+  color: #48baf9;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label18 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label19 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label20 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label21 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label22 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label23 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label24 {
+  color: #d367cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label25 {
+  color: #c7856f;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label26 {
+  color: #d367cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label27 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label28 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label29 {
+  color: #48baf9;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label30 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label31 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label32 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label33 {
+  color: #d367cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label34 {
+  color: #6b9ab2;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label35 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label36 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label37 {
+  color: #92d8fc;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label38 {
+  color: #d367cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label39 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label40 {
+  color: #4d93cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label41 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label42 {
+  color: #d367cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label43 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label44 {
+  color: #4d93cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label45 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label46 {
+  color: #48baf9;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label47 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label48 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label49 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label50 {
+  color: #adc7a0;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label51 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label52 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label53 {
+  color: #4d93cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label54 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label55 {
+  color: #48baf9;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label56 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label57 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label58 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label59 {
+  color: #c7856f;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label60 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label61 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label62 {
+  color: #92d8fc;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label63 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label64 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label65 {
+  color: #1998fa;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label66 {
+  color: #48baf9;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label67 {
+  color: #1998fa;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label68 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label69 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label70 {
+  color: #1998fa;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label71 {
+  color: #c7856f;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label72 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label73 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label74 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label75 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label76 {
+  color: #92d8fc;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label77 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label78 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label79 {
+  color: #92d8fc;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label80 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label81 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label82 {
+  color: #1998fa;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label83 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label84 {
+  color: #d367cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label85 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label86 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label87 {
+  color: #48baf9;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label88 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label89 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label90 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label91 {
+  color: #adc7a0;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label92 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label93 {
+  color: #d367cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label94 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label95 {
+  color: #4d93cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label96 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label97 {
+  color: #d367cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label98 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label99 {
+  color: #92d8fc;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label100 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label101 {
+  color: #d7d6a3;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label102 {
+  color: #1998fa;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label103 {
+  color: #c7856f;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label104 {
+  color: #1998fa;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label105 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label106 {
+  color: #d367cd;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label107 {
+  color: #ffcf30;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label108 {
+  color: #cecece;
+  font-size: 10px;
+  font-family: Roboto Mono, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.code_head {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  height: 28px;
+  background-color: #3e4862;
+}
+.icon {
+    margin: 8px;
+    width: 60px;
+    height: 18px;
+}
+</style>
