@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import SNSCard from '../../components/SNSCard.astro';
 import PageHeader from '../../components/PageHeader.astro';
-import UpdateCard from '../../components/UpdateCard.astro';
+import LinkCard from '../../components/LinkCard.astro';
 
 import profile from '../../data/profile.json';
 import snsLinkList from '../../data/snsLinkList.json';
@@ -41,13 +41,13 @@ import pickupLinkList from '../../data/pickupLinkList.json';
                 <h2>Pickup Links</h2>
 		        <ul role="list" class="link-update-card-grid">
                     {pickupLinkList.map((l) => (
-                        <UpdateCard 
+                        <LinkCard 
                             title={l.title}
                             description={l.description}
                             href={l.href}
                             thumbnailLink={l.thumbnailLink}
                             publishedAt={l.publishedAt}
-                        ></UpdateCard>
+                        ></LinkCard>
                     ))}
                 </ul>
             </div>

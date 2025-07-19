@@ -3,7 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import PageHeader from '../../../components/PageHeader.astro';
 import articlesList from '../../../data/articlesList.json';
 import profile from '../../../data/profile.json';
-import UpdateCard from '../../../components/UpdateCard.astro';
+import LinkCard from '../../../components/LinkCard.astro';
 
 ---
 
@@ -19,13 +19,13 @@ import UpdateCard from '../../../components/UpdateCard.astro';
 				></PageHeader>
 				<ul role="list" class="link-update-card-grid">
 					{articlesList.map((article) => (
-                        <UpdateCard 
+                        <LinkCard 
                             title={article.title}
                             description={article.description}
                             href={article.href}
                             thumbnailLink={article.thumbnailLink}
                             publishedAt={article.publishedAt}
-                        ></UpdateCard>
+                        ></LinkCard>
 					))}
 				</ul>
 			</div>
