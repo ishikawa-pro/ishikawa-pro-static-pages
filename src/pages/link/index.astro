@@ -11,15 +11,15 @@ import pickupLinkList from '../../data/pickupLinkList.json';
 ---
 <Layout title="ishikawa-pro | Link">
 	<main>
-        <div class='link-background-wrapper'>
-            <div class="link-overlay"></div>
-            <div class='link-container'>
+        <div class='relative before:content-[""] before:absolute before:inset-0 before:bg-[url("/profile_image.png")] before:bg-center before:bg-no-repeat before:blur-[10px] before:bg-fixed before:bg-cover'>
+            <div class="absolute inset-0 bg-[rgba(17,21,32,0.7)]"></div>
+            <div class='relative mx-auto bg-[#111520] max-w-[414px]'>
                 <PageHeader 
                     title={profile.name}
                     subtitle={profile.jobTitle}
                     backgroundImage={profile.heroImageLink}
                 ></PageHeader>
-		        <ul role="list" class="link-sns-card-grid">
+		        <ul role="list" class="p-0 mx-6 mb-8 mt-4">
                     {snsLinkList.map((snsLink) => (
                         <SNSCard 
                             title={snsLink.title}
@@ -28,18 +28,18 @@ import pickupLinkList from '../../data/pickupLinkList.json';
                         ></SNSCard>
                     ))}
                 </ul>
-                <div class="link-articles-link-card">
-                    <li class="articles-link-card">
-                        <a href="/link/articles">
-                            <div class='articles-link-card-content'>
-                                <span class='articles-link-card-title'>執筆・登壇</span>
-                                <span class='articles-link-card-arrow'>→</span>
+                <div class="mx-6">
+                    <li class="list-none bg-[#242B40] rounded-lg mb-3 transition-all duration-200 ease-in-out hover:bg-[#3C4869] focus-within:bg-[#3C4869]">
+                        <a href="/link/articles" class="block w-full text-decoration-none text-white">
+                            <div class='flex justify-between items-center px-6 py-5'>
+                                <span class='text-sm font-bold tracking-wider'>執筆・登壇</span>
+                                <span class='text-base text-[#8D9AAE] transition-transform duration-200 ease-in-out group-hover:text-[#1d2232] group-focus-within:text-[#1d2232]'>→</span>
                             </div>
                         </a>
                     </li>
                 </div>
-                <h2>Pickup Links</h2>
-		        <ul role="list" class="link-update-card-grid">
+                <h2 class="tracking-wider leading-relaxed mx-6 my-4 text-lg text-[#8D9AAE]">Pickup Links</h2>
+		        <ul role="list" class="p-0 mx-6 mt-4 pb-8">
                     {pickupLinkList.map((l) => (
                         <LinkCard 
                             title={l.title}
@@ -54,90 +54,3 @@ import pickupLinkList from '../../data/pickupLinkList.json';
         </div>
 	</main>
 </Layout>
-
-<style>
-    .link-overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(17,21,32,0.7);
-    }
-    .link-background-wrapper::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('/profile_image.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: blur(10px);
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    .link-background-wrapper {
-        position: relative;
-    }
-    .link-container {
-        position: relative;
-		margin: 0 auto;
-		background-color: #111520;
-		max-width: 414px;
-    }
-	.link-sns-card-grid {
-		padding: 0;
-        margin: 16px 24px 32px 24px;
-	}
-    .link-update-card-grid {
-		padding: 0;
-        margin: 16px 24px 0px 24px;
-        padding-bottom: 32px;
-    }
-    h2 {
-        letter-spacing: 1px;
-        line-height: 1.5;
-        margin: 16px 24px 16px 24px;
-        color: #8D9AAE;
-    }
-    .link-articles-link-card {
-        margin: 0px 24px 0px 24px;
-    }
-	.articles-link-card {
-		list-style: none;
-		background-color: #242B40;
-		border-radius: 8px;
-		margin-bottom: 12px;
-        transition: all 0.2s ease-in-out;
-	}
-	.articles-link-card > a {
-		display: block;
-		width: 100%;
-		text-decoration: none;
-		color: #FFFFFF;
-	}
-    .articles-link-card-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 24px;
-    }
-	.articles-link-card-title {
-		font-size: 14px;
-		font-weight: bold;
-		letter-spacing: 1px;
-	}
-    .articles-link-card-arrow {
-        font-size: 16px;
-        color: #8D9AAE;
-        transition: transform 0.2s ease-in-out;
-    }
-	.articles-link-card:is(:hover, :focus-within) {
-		background-color: #3C4869;
-	}
-    .articles-link-card:is(:hover, :focus-within) .articles-link-card-arrow {
-		color: #1d2232;
-    }
-</style>

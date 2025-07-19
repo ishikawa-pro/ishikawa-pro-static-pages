@@ -16,68 +16,15 @@ const week =['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][new Date().getDay()];
 // 日付をYYYY/MM/DD(aaa)の形式に整形
 const formatedPublishedDate = year + '/' + month + '/' + day + '(' + week + ')';
 ---
-<li class='link-update-card'>
-    <a href={href} target="_blank" rel="noopener noreferrer">
-        <div class="link-update-card-image-container">
-            <img src={thumbnailLink} class="zoom-image"/>
+<li class="list-none mb-6">
+    <a href={href} target="_blank" rel="noopener noreferrer" class="block bg-[#242B40] no-underline rounded-lg">
+        <div class="relative w-full h-[200px] overflow-hidden inline-block rounded-t-lg">
+            <img src={thumbnailLink} class="block w-full h-full object-cover object-center transition-transform duration-300 ease-in-out hover:scale-110"/>
         </div>
-        <div class='link-update-card-text'>
-            <h3>{title}</h3>
-            <p>{description}</p>
+        <div class="p-3">
+            <h3 class="m-0 mb-1.5 text-white text-sm font-bold leading-relaxed">{title}</h3>
+            <p class="m-0 text-[#8D9AAE] text-xs leading-relaxed">{description}</p>
         </div>
     </a>
-    <div class='link-update-card-date'>{formatedPublishedDate}</div>
+    <div class="mt-1 text-[#5D687A] text-xs text-right">{formatedPublishedDate}</div>
 </li>
-<style>
-    .link-update-card {
-		list-style: none;
-        margin-bottom: 24px;
-    }
-    .link-update-card > a {
-        display: block;
-        background-color: #242B40;
-		text-decoration: none;
-        border-radius: 8px;
-    }
-    .link-update-card-image-container {
-        position: relative;
-        width: 100%;
-        height: 200px; /* 最低の高さを設定 */
-        overflow: hidden;
-        display: inline-block;
-        border-radius: 8px 8px 0 0;
-    }
-    /* ホバー時の画像拡大 */
-    .link-update-card-image-container:hover .zoom-image {
-        transform: scale(1.1); /* 画像の拡大倍率設定 */
-    }
-    .link-update-card > a > div > img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* 画像のアスペクト比を保ちながらコンテナにフィット */
-        object-position: center; /* 画像を中央に配置 */
-        transition: transform 0.3s ease-in-out; /* 画像の拡大アニメーション設定 */
-    }
-    .link-update-card-text {
-        padding: 12px;
-    }
-    .link-update-card-text > h3 {
-        margin: 0 0 6px 0;
-        color: white;
-        font-size: 14px;
-        line-height: 1.4;
-    }
-    .link-update-card-text > p {
-        margin: 0;
-        color: #8D9AAE;
-        font-size: 12px;
-        line-height: 1.4;
-    }
-    .link-update-card-date {
-        margin-top: 4px;
-        color: #5D687A;
-        font-size: 12px;
-        text-align: right;
-    }
-</style>
