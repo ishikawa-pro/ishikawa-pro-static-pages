@@ -1,5 +1,26 @@
 [
     {
+        "title": "Modular Monolith で支える中規模組織の Platform Engineering 実践",
+        "description": "中規模組織で Platform Engineering を実践するために、Modular Monolith というアーキテクチャを採用した事例を紹介します。",
+        "thumbnailLink": "/thumbnails/modular-monolith-platform.jpg",
+        "href": "https://developers.cyberagent.co.jp/blog/archives/51416/",
+        "publishedAt": "2024.12.03"
+    },
+    {
+        "title": "20以上のサービスを同時に支えるCAMのプラットフォーム戦略の実践",
+        "description": "Platform Engineering Kaigi 2024 で、株式会社CAM における Fensi Platform という独自プラットフォームを使ったプラットフォーム戦略の実践についてお話しました。",
+        "thumbnailLink": "/thumbnails/cam-platform-strategy.jpg",
+        "href": "https://speakerdeck.com/ishikawa_pro/20yi-shang-nosabisuwotong-shi-nizhi-erucamnopuratutohuomuzhan-lue-noshi-jian",
+        "publishedAt": "2024.07.10"
+    },
+    {
+        "title": "Platform Engineeringの2つの「IDP」～Internal Developer Platformとは？",
+        "description": null,
+        "thumbnailLink": "/thumbnails/platform-engineering-idp.png",
+        "href": "https://codezine.jp/article/detail/19376",
+        "publishedAt": "2024.04.24"
+    },
+    {
         "title": "Google Cloud Run と Serverless NEG を活用した Next.js の Preview Deployment 機能の紹介",
         "description": null,
         "thumbnailLink": "/thumbnails/cloud-run2.png",
@@ -14,38 +35,10 @@
         "publishedAt": "2022.11.25"
     },
     {
-        "title": "サービス成長に伴うリアーキの取り組み詳細事例【タップル｜CAM｜アンドパッド】",
-        "description": "2022/5/12に登壇しました",
-        "thumbnailLink": "/thumbnails/tapple-andpad-cam.png",
-        "href": "https://andpad.connpass.com/event/245072/",
-        "publishedAt": "2022.05.12"
-    },
-    {
-        "title": "Gatsby.js製リンクまとめサービスのSSG(Static Site Generation)を支える技術",
-        "description": "Gatsby.jを使ったSSG基盤について紹介しています。",
-        "thumbnailLink": "/thumbnails/cam-ssg-platform.png",
-        "href": "https://cam-inc.co.jp/p/techblog/634327895480730665",
-        "publishedAt": "2022.03.23"
-    },
-    {
-        "title": "マイクロサービスアーキテクチャの魅力とは？入社3年目のバックエンドエンジニアが夢中になる理由",
-        "description": "会社でインタビューしていただきました！",
-        "thumbnailLink": "/thumbnails/cam-interview.png",
-        "href": "https://www.wantedly.com/companies/company_3539638/post_articles/385834",
-        "publishedAt": "2022.03.09"
-    },
-    {
-        "title": "Fensi による Amazon Chime SDK を使った 1 on 1 トーク機能の実装方法",
-        "description": "Amazon Chime SDKを使ったビデオ通話サービスについてAWSブログで紹介していただきました。",
-        "thumbnailLink": "/thumbnails/aws-chime-blog.jpg",
-        "href": "https://aws.amazon.com/jp/blogs/news/fensi-1on1-talk-via-amazon-chime-sdk-jpmne/",
-        "publishedAt": "2021.07.13"
-    },
-    {
-        "title": "Amazon Chime SDKを使って1on1トーク機能を実装した話 〜サーバー編〜",
-        "description": "会社のテックブログを執筆しました",
-        "thumbnailLink": "/thumbnails/cam-sola-blog.png",
-        "href": "https://cam-inc.co.jp/p/techblog/500204190849565633",
-        "publishedAt": "2021.03.17"
+        "title": "jestのテストが遅い場合に確認すべきこと",
+        "description": null,
+        "thumbnailLink": "/thumbnails/jest-performance.png",
+        "href": "https://ishikawa-pro.hatenablog.com/entry/2020/10/19/100000",
+        "publishedAt": "2020.10.19"
     }
 ]

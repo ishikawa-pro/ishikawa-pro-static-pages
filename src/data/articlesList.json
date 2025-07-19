@@ -1,5 +1,26 @@
 [
     {
+        "title": "Modular Monolith で支える中規模組織の Platform Engineering 実践",
+        "description": "中規模組織で Platform Engineering を実践するために、Modular Monolith というアーキテクチャを採用した事例を紹介します。",
+        "thumbnailLink": "/thumbnails/modular-monolith-platform.jpg",
+        "href": "https://developers.cyberagent.co.jp/blog/archives/51416/",
+        "publishedAt": "2024.12.03"
+    },
+    {
+        "title": "＜Platform Engineering、DevOps、CCoE＞大規模システムの効率的運用の裏側",
+        "description": "大規模システムを少人数で効率的に、そして安全に運用する工夫に迫るパネルディスカッション",
+        "thumbnailLink": "/thumbnails/aeon-platform-engineering-panel.png",
+        "href": "https://aeon.connpass.com/event/328374/",
+        "publishedAt": "2024.10.23"
+    },
+    {
+        "title": "20以上のサービスを同時に支えるCAMのプラットフォーム戦略の実践",
+        "description": "Platform Engineering Kaigi 2024 で、株式会社CAM における Fensi Platform という独自プラットフォームを使ったプラットフォーム戦略の実践についてお話しました。",
+        "thumbnailLink": "/thumbnails/cam-platform-strategy.jpg",
+        "href": "https://speakerdeck.com/ishikawa_pro/20yi-shang-nosabisuwotong-shi-nizhi-erucamnopuratutohuomuzhan-lue-noshi-jian",
+        "publishedAt": "2024.07.10"
+    },
+    {
         "title": "Platform Engineeringの2つの「IDP」～Internal Developer Platformとは？",
         "description": null,
         "thumbnailLink": "/thumbnails/platform-engineering-idp.png",
