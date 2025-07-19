@@ -9,12 +9,12 @@ const { title, iconPath, href } = Astro.props;
 ---
 
 <li class="link-sns-card">
-	<a href={href}>
-		<img src={iconPath}/>
-		<div class='link-sns-card-title'>
-			{title}
-		</div>
-	</a>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+                <img src={iconPath}/>
+                <div class='link-sns-card-title'>
+                        {title}
+                </div>
+        </a>
 </li>
 <style>
 	.link-sns-card {
