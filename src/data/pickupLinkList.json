@@ -21,6 +21,13 @@
         "publishedAt": "2024.04.24"
     },
     {
+        "title": "Platform Engineeringことはじめ～コミュニティと一緒に新たな旅に出よう！",
+        "description": "Developers Summit 2024 で、Platform Engineering Meetup 運営メンバーとして他のメンバーと共同で、Platform Engineering についてお話しました。",
+        "thumbnailLink": "/thumbnails/devsumi2024-logo.svg",
+        "href": "https://event.shoeisha.jp/devsumi/20240215/session/4807",
+        "publishedAt": "2024.02.15"
+    },
+    {
         "title": "Google Cloud Run と Serverless NEG を活用した Next.js の Preview Deployment 機能の紹介",
         "description": null,
         "thumbnailLink": "/thumbnails/cloud-run2.png",
