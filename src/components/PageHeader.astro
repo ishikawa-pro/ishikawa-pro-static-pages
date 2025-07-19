@@ -1,26 +1,26 @@
 ---
 export interface Props {
-	name: string;
-	jobTitle: string;
-    heroImageLink: string;
+	title: string;
+	subtitle: string;
+    backgroundImage: string;
 }
 
-const { name, jobTitle, heroImageLink } = Astro.props;
+const { title, subtitle, backgroundImage } = Astro.props;
 ---
-<div class='link-profile'>
-    <img src={heroImageLink} class="profile-background-image">
+<div class='page-header'>
+    <img src={backgroundImage} class="header-background-image">
     <div class="gradient-overlay"></div>
-    <div class="link-profile-title">
-        <p class='link-profile-name'>{name}</p>
-        <p class='link-profile-job-title'>{jobTitle}</p>
+    <div class="page-header-title">
+        <p class='page-header-main-title'>{title}</p>
+        <p class='page-header-subtitle'>{subtitle}</p>
     </div>
 </div>
 <style>
-    .link-profile {
+    .page-header {
         position: relative;
         display: inline-block;
     }
-    .profile-background-image {
+    .header-background-image {
         display: block;
         width: 100%;
         height: auto;
@@ -33,20 +33,20 @@ const { name, jobTitle, heroImageLink } = Astro.props;
         height: 74%;
         background-image: linear-gradient(0deg, rgba(17,21,32,1), rgba(17,21,32,0));
     }
-    .link-profile-title {
+    .page-header-title {
         position: absolute;
         bottom: 32px;
         left: 24px;
         width: calc(100% - 24px);
     }
-    .link-profile-name {
+    .page-header-main-title {
         font-size: 32px;
         font-weight: 700;
         margin: 0 0 2px 0;
         letter-spacing: 1px;
         color: #ffffff;
     }
-    .link-profile-job-title {
+    .page-header-subtitle {
         font-size: 12px;
         margin: 0;
         font-weight: bold;

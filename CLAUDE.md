@@ -29,7 +29,7 @@ This is a personal portfolio/link aggregation site built with Astro v2.3.4 as a 
 
 ### Project Structure
 - `src/pages/`: Astro pages (link.astro is the main page, 404.astro for errors)
-- `src/components/`: Reusable Astro components (LinkProfile, SNSCard, UpdateCard)
+- `src/components/`: Reusable Astro components (PageHeader, SNSCard, UpdateCard)
 - `src/layouts/`: Base layout with meta tags and Open Graph configuration
 - `src/data/`: JSON files for content (profile.json, snsLinkList.json, updateLinkList.json)
 - `public/`: Static assets including favicon, images, and Netlify redirects

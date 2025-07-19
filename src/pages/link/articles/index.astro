@@ -1,6 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import LinkProfile from '../../../components/LinkProfile.astro';
+import PageHeader from '../../../components/PageHeader.astro';
 import articlesList from '../../../data/articlesList.json';
 import profile from '../../../data/profile.json';
 
@@ -11,11 +11,11 @@ import profile from '../../../data/profile.json';
 		<div class='link-background-wrapper'>
 			<div class="link-overlay"></div>
 			<div class='link-container'>
-				<LinkProfile 
-					name={'Articles & Talks'}
-					jobTitle={'執筆・登壇のリンク集'}
-					heroImageLink={profile.heroImageLink}
-				></LinkProfile>
+				<PageHeader 
+					title={'Articles & Talks'}
+					subtitle={'執筆・登壇のリンク集'}
+					backgroundImage={profile.heroImageLink}
+				></PageHeader>
 				<ul role="list" class="link-update-card-grid">
 					{articlesList.map((article) => (
 						<li class='link-update-card'>

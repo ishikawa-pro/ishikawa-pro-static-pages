@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import SNSCard from '../../components/SNSCard.astro';
-import LinkProfile from '../../components/LinkProfile.astro';
+import PageHeader from '../../components/PageHeader.astro';
 import UpdateCard from '../../components/UpdateCard.astro';
 import ArticlesLinkCard from '../../components/ArticlesLinkCard.astro';
 
@@ -15,11 +15,11 @@ import updateLinkList from '../../data/updateLinkList.json';
         <div class='link-background-wrapper'>
             <div class="link-overlay"></div>
             <div class='link-container'>
-                <LinkProfile 
-                    name={profile.name}
-                    jobTitle={profile.jobTitle}
-                    heroImageLink={profile.heroImageLink}
-                ></LinkProfile>
+                <PageHeader 
+                    title={profile.name}
+                    subtitle={profile.jobTitle}
+                    backgroundImage={profile.heroImageLink}
+                ></PageHeader>
 		        <ul role="list" class="link-sns-card-grid">
                     {snsLinkList.map((snsLink) => (
                         <SNSCard 
