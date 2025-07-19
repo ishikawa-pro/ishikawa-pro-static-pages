@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Modular Monolith で支える中規模組織の Platform Engineering 実践",
+        "description": "中規模組織で Platform Engineering を実践するために、Modular Monolith というアーキテクチャを採用した事例を紹介します。",
+        "thumbnailLink": "/thumbnails/modular-monolith-platform.jpg",
+        "href": "https://developers.cyberagent.co.jp/blog/archives/51416/",
+        "publishedAt": "2024.12.03"
+    },
+    {
+        "title": "20以上のサービスを同時に支えるCAMのプラットフォーム戦略の実践",
+        "description": "Platform Engineering Kaigi 2024 で、株式会社CAM における Fensi Platform という独自プラットフォームを使ったプラットフォーム戦略の実践についてお話しました。",
+        "thumbnailLink": "/thumbnails/cam-platform-strategy.jpg",
+        "href": "https://speakerdeck.com/ishikawa_pro/20yi-shang-nosabisuwotong-shi-nizhi-erucamnopuratutohuomuzhan-lue-noshi-jian",
+        "publishedAt": "2024.07.10"
+    },
+    {
+        "title": "Platform Engineeringの2つの「IDP」～Internal Developer Platformとは？",
+        "description": null,
+        "thumbnailLink": "/thumbnails/platform-engineering-idp.png",
+        "href": "https://codezine.jp/article/detail/19376",
+        "publishedAt": "2024.04.24"
+    },
+    {
+        "title": "Google Cloud Run と Serverless NEG を活用した Next.js の Preview Deployment 機能の紹介",
+        "description": null,
+        "thumbnailLink": "/thumbnails/cloud-run2.png",
+        "href": "https://developers.cyberagent.co.jp/blog/archives/38428/",
+        "publishedAt": "2022.12.03"
+    },
+    {
+        "title": "Cloud Run を使った Next.js のホスティング基盤について",
+        "description": null,
+        "thumbnailLink": "/thumbnails/cloud-run1.jpg",
+        "href": "https://cam-inc.co.jp/p/techblog/723359699633701974",
+        "publishedAt": "2022.11.25"
+    },
+    {
+        "title": "jestのテストが遅い場合に確認すべきこと",
+        "description": null,
+        "thumbnailLink": "/thumbnails/jest-performance.png",
+        "href": "https://ishikawa-pro.hatenablog.com/entry/2020/10/19/100000",
+        "publishedAt": "2020.10.19"
+    }
+]

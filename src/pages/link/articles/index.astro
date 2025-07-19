@@ -1,0 +1,125 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import articlesList from '../../../data/articlesList.json';
+import profile from '../../../data/profile.json';
+import LinkCard from '../../../components/LinkCard.astro';
+
+---
+
+<Layout title="ishikawa-pro | Articles">
+	<main>
+		<div class='link-background-wrapper'>
+			<div class="link-overlay"></div>
+			<div class='link-container'>
+				<PageHeader 
+					title={'Articles & Talks'}
+					subtitle={'執筆・登壇のリンク集'}
+					backgroundImage={profile.heroImageLink}
+				></PageHeader>
+				<ul role="list" class="link-update-card-grid">
+					{articlesList.map((article) => (
+                        <LinkCard 
+                            title={article.title}
+                            description={article.description}
+                            href={article.href}
+                            thumbnailLink={article.thumbnailLink}
+                            publishedAt={article.publishedAt}
+                        ></LinkCard>
+					))}
+				</ul>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.link-overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(17,21,32,0.7);
+	}
+	.link-background-wrapper::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('/profile_image.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		filter: blur(10px);
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	.link-background-wrapper {
+		position: relative;
+	}
+	.link-container {
+		position: relative;
+		margin: 0 auto;
+		background-color: #111520;
+		max-width: 414px;
+	}
+	.link-update-card-grid {
+		padding: 0;
+		margin: 16px 24px 0px 24px;
+		padding-bottom: 32px;
+	}
+	h2 {
+		letter-spacing: 1px;
+		line-height: 1.5;
+		margin: 16px 24px 16px 24px;
+		color: #8D9AAE;
+	}
+	.link-update-card {
+		list-style: none;
+		margin-bottom: 24px;
+	}
+	.link-update-card > a {
+		display: block;
+		background-color: #242B40;
+		text-decoration: none;
+		border-radius: 8px;
+	}
+	.link-update-card-image-container {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		display: inline-block;
+		border-radius: 8px 8px 0 0;
+	}
+	.link-update-card-image-container:hover .zoom-image {
+		transform: scale(1.1);
+	}
+	.link-update-card > a > div > img {
+		display: block;
+		width: 100%;
+		transition: transform 0.3s ease-in-out;
+	}
+	.link-update-card-text {
+		padding: 12px;
+	}
+	.link-update-card-text > h3 {
+		margin: 0 0 6px 0;
+		color: white;
+		font-size: 14px;
+		line-height: 1.4;
+	}
+	.link-update-card-text > p {
+		margin: 0;
+		color: #8D9AAE;
+		font-size: 12px;
+		line-height: 1.4;
+	}
+	.link-update-card-date {
+		margin-top: 4px;
+		color: #5D687A;
+		font-size: 12px;
+		text-align: right;
+	}
+</style>
