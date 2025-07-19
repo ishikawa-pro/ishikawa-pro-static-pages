@@ -1,12 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import SNSCard from '../components/SNSCard.astro';
-import LinkProfile from '../components/LinkProfile.astro';
-import UpdateCard from '../components/UpdateCard.astro';
+import Layout from '../../layouts/Layout.astro';
+import SNSCard from '../../components/SNSCard.astro';
+import LinkProfile from '../../components/LinkProfile.astro';
+import UpdateCard from '../../components/UpdateCard.astro';
+import ArticlesLinkCard from '../../components/ArticlesLinkCard.astro';
 
-import profile from '../data/profile.json';
-import snsLinkList from '../data/snsLinkList.json';
-import updateLinkList from '../data/updateLinkList.json';
+import profile from '../../data/profile.json';
+import snsLinkList from '../../data/snsLinkList.json';
+import updateLinkList from '../../data/updateLinkList.json';
 
 ---
 <Layout title="ishikawa-pro | Link">
@@ -28,6 +29,12 @@ import updateLinkList from '../data/updateLinkList.json';
                         ></SNSCard>
                     ))}
                 </ul>
+                <div class="link-articles-link-card">
+                    <ArticlesLinkCard
+                        title="執筆・登壇"
+                        href="/link/articles"
+                    ></ArticlesLinkCard>
+                </div>
                 <h2>Updates</h2>
 		        <ul role="list" class="link-update-card-grid">
                     {updateLinkList.map((l) => (
@@ -91,5 +98,8 @@ import updateLinkList from '../data/updateLinkList.json';
         line-height: 1.5;
         margin: 16px 24px 16px 24px;
         color: #8D9AAE;
+    }
+    .link-articles-link-card {
+        margin: 0px 24px 0px 24px;
     }
 </style>

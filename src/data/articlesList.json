@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Google Cloud Run と Serverless NEG を活用した Next.js の Preview Deployment 機能の紹介",
+        "description": null,
+        "thumbnailLink": "/updates/cloud-run2.png",
+        "href": "https://developers.cyberagent.co.jp/blog/archives/38428/",
+        "publishedAt": "2022.12.03"
+    },
+    {
+        "title": "Cloud Run を使った Next.js のホスティング基盤について",
+        "description": null,
+        "thumbnailLink": "/updates/cloud-run1.jpg",
+        "href": "https://cam-inc.co.jp/p/techblog/723359699633701974",
+        "publishedAt": "2022.11.25"
+    },
+    {
+        "title": "サービス成長に伴うリアーキの取り組み詳細事例【タップル｜CAM｜アンドパッド】",
+        "description": "2022/5/12に登壇しました",
+        "thumbnailLink": "/updates/tapple-andpad-cam.png",
+        "href": "https://andpad.connpass.com/event/245072/",
+        "publishedAt": "2022.05.12"
+    },
+    {
+        "title": "Gatsby.js製リンクまとめサービスのSSG(Static Site Generation)を支える技術",
+        "description": "Gatsby.jを使ったSSG基盤について紹介しています。",
+        "thumbnailLink": "/updates/cam-ssg-platform.png",
+        "href": "https://cam-inc.co.jp/p/techblog/634327895480730665",
+        "publishedAt": "2022.03.23"
+    },
+    {
+        "title": "マイクロサービスアーキテクチャの魅力とは？入社3年目のバックエンドエンジニアが夢中になる理由",
+        "description": "会社でインタビューしていただきました！",
+        "thumbnailLink": "/updates/cam-interview.png",
+        "href": "https://www.wantedly.com/companies/company_3539638/post_articles/385834",
+        "publishedAt": "2022.03.09"
+    },
+    {
+        "title": "Fensi による Amazon Chime SDK を使った 1 on 1 トーク機能の実装方法",
+        "description": "Amazon Chime SDKを使ったビデオ通話サービスについてAWSブログで紹介していただきました。",
+        "thumbnailLink": "/updates/aws-chime-blog.jpg",
+        "href": "https://aws.amazon.com/jp/blogs/news/fensi-1on1-talk-via-amazon-chime-sdk-jpmne/",
+        "publishedAt": "2021.07.13"
+    },
+    {
+        "title": "Amazon Chime SDKを使って1on1トーク機能を実装した話 〜サーバー編〜",
+        "description": "会社のテックブログを執筆しました",
+        "thumbnailLink": "/updates/cam-sola-blog.png",
+        "href": "https://cam-inc.co.jp/p/techblog/500204190849565633",
+        "publishedAt": "2021.03.17"
+    }
+]
