@@ -10,7 +10,7 @@ const { title, iconPath, href } = Astro.props;
 
 <li class="link-sns-card">
         <a href={href} target="_blank" rel="noopener noreferrer">
-                <img src={iconPath}/>
+                <img src={iconPath} alt={title}/>
                 <div class='link-sns-card-title'>
                         {title}
                 </div>
@@ -28,10 +28,14 @@ const { title, iconPath, href } = Astro.props;
 		width: 100%;
 		text-decoration: none;
 		color: #FFFFFF;
+        align-items: center;
 	}
 	img {
 		margin: 12px;
+		padding: 12px;
 		width: 44px;
+        height: 44px;
+        object-fit: contain;
 	}
 	.link-sns-card-title {
 		margin: 24px 12px;
