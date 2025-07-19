@@ -3,11 +3,10 @@ import Layout from '../../layouts/Layout.astro';
 import SNSCard from '../../components/SNSCard.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import UpdateCard from '../../components/UpdateCard.astro';
-import ArticlesLinkCard from '../../components/ArticlesLinkCard.astro';
 
 import profile from '../../data/profile.json';
 import snsLinkList from '../../data/snsLinkList.json';
-import updateLinkList from '../../data/updateLinkList.json';
+import pickupLinkList from '../../data/pickupLinkList.json';
 
 ---
 <Layout title="ishikawa-pro | Link">
@@ -30,14 +29,18 @@ import updateLinkList from '../../data/updateLinkList.json';
                     ))}
                 </ul>
                 <div class="link-articles-link-card">
-                    <ArticlesLinkCard
-                        title="執筆・登壇"
-                        href="/link/articles"
-                    ></ArticlesLinkCard>
+                    <li class="articles-link-card">
+                        <a href="/link/articles">
+                            <div class='articles-link-card-content'>
+                                <span class='articles-link-card-title'>執筆・登壇</span>
+                                <span class='articles-link-card-arrow'>→</span>
+                            </div>
+                        </a>
+                    </li>
                 </div>
-                <h2>Updates</h2>
+                <h2>Pickup Links</h2>
 		        <ul role="list" class="link-update-card-grid">
-                    {updateLinkList.map((l) => (
+                    {pickupLinkList.map((l) => (
                         <UpdateCard 
                             title={l.title}
                             description={l.description}
@@ -101,5 +104,40 @@ import updateLinkList from '../../data/updateLinkList.json';
     }
     .link-articles-link-card {
         margin: 0px 24px 0px 24px;
+    }
+	.articles-link-card {
+		list-style: none;
+		background-color: #242B40;
+		border-radius: 8px;
+		margin-bottom: 12px;
+        transition: all 0.2s ease-in-out;
+	}
+	.articles-link-card > a {
+		display: block;
+		width: 100%;
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+    .articles-link-card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 24px;
+    }
+	.articles-link-card-title {
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+    .articles-link-card-arrow {
+        font-size: 16px;
+        color: #8D9AAE;
+        transition: transform 0.2s ease-in-out;
+    }
+	.articles-link-card:is(:hover, :focus-within) {
+		background-color: #3C4869;
+	}
+    .articles-link-card:is(:hover, :focus-within) .articles-link-card-arrow {
+		color: #1d2232;
     }
 </style>
