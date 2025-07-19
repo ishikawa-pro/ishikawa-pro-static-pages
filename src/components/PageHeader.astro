@@ -7,49 +7,11 @@ export interface Props {
 
 const { title, subtitle, backgroundImage } = Astro.props;
 ---
-<div class='page-header'>
-    <img src={backgroundImage} class="header-background-image">
-    <div class="gradient-overlay"></div>
-    <div class="page-header-title">
-        <p class='page-header-main-title'>{title}</p>
-        <p class='page-header-subtitle'>{subtitle}</p>
+<div class="relative inline-block">
+    <img src={backgroundImage} class="block w-full h-auto">
+    <div class="absolute bottom-0 left-0 w-full h-[74%] bg-gradient-to-t from-[#111520] to-transparent"></div>
+    <div class="absolute bottom-8 left-6 w-[calc(100%-24px)]">
+        <p class="text-3xl font-bold m-0 mb-2 tracking-wide text-white">{title}</p>
+        <p class="text-xs m-0 font-bold text-white">{subtitle}</p>
     </div>
 </div>
-<style>
-    .page-header {
-        position: relative;
-        display: inline-block;
-    }
-    .header-background-image {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    .gradient-overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 74%;
-        background-image: linear-gradient(0deg, rgba(17,21,32,1), rgba(17,21,32,0));
-    }
-    .page-header-title {
-        position: absolute;
-        bottom: 32px;
-        left: 24px;
-        width: calc(100% - 24px);
-    }
-    .page-header-main-title {
-        font-size: 32px;
-        font-weight: 700;
-        margin: 0 0 2px 0;
-        letter-spacing: 1px;
-        color: #ffffff;
-    }
-    .page-header-subtitle {
-        font-size: 12px;
-        margin: 0;
-        font-weight: bold;
-        color: #ffffff;
-    }
-</style>
