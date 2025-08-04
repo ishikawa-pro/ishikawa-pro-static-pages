@@ -1,5 +1,19 @@
 [
     {
+        "title": "Devin×Playbookで、大規模サービスの少人数運用を可能にするSREのチーム拡張戦略",
+        "description": "CyberAgent Way でDevinの活用に関してインタビューしていただきました",
+        "thumbnailLink": "/thumbnails/cyberagent-devin-playbook-sre.jpg",
+        "href": "https://www.cyberagent.co.jp/way/list/detail/id=32217",
+        "publishedAt": "2025.01.31"
+    },
+    {
+        "title": "少人数でも回る！ DevinとPlaybookで支える運用改善",
+        "description": "Devin Meetup Tokyo 2025 で登壇しました",
+        "thumbnailLink": "/thumbnails/devin-playbook-operation.jpg",
+        "href": "https://speakerdeck.com/ishikawa_pro/shao-ren-shu-demohui-ru-devintoplaybookdezhi-eruyun-yong-gai-shan",
+        "publishedAt": "2025.01.27"
+    },
+    {
         "title": "Modular Monolith で支える中規模組織の Platform Engineering 実践",
         "description": "中規模組織で Platform Engineering を実践するために、Modular Monolith というアーキテクチャを採用した事例を紹介します。",
         "thumbnailLink": "/thumbnails/modular-monolith-platform.jpg",
