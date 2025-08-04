@@ -50,19 +50,23 @@ This is a personal portfolio/link aggregation site built with Astro v2.3.4 as a 
 
 When adding new articles to `src/data/articlesList.json`:
 
-1. **Fetch OGP metadata** from the provided URL using WebFetch tool
-   - Extract: `og:title`, `og:description`, `og:image`, and publication date
+1. **Fetch OGP metadata** from the provided URL using curl:
+   ```bash
+   curl -s [URL] | grep -E 'og:(title|description|image)' | head -20
+   ```
    
 2. **Download the OGP image** to local storage:
    ```bash
    curl -o public/thumbnails/[descriptive-filename].[ext] "[image-url]"
    ```
+   - Use descriptive filenames based on the article content
+   - Common extensions: .jpg, .png
    
 3. **Add entry to articlesList.json** with this structure:
    ```json
    {
        "title": "Article title from OGP",
-       "description": "Description from OGP or null",
+       "description": "Description from OGP or custom description",
        "thumbnailLink": "/thumbnails/[downloaded-image-filename]",
        "href": "Original URL",
        "publishedAt": "YYYY.MM.DD"
@@ -73,4 +77,5 @@ When adding new articles to `src/data/articlesList.json`:
    - New entries should be added at the beginning of the array (most recent first)
    - Date format must be `YYYY.MM.DD` (e.g., "2024.12.03")
    - Thumbnail paths must start with `/thumbnails/`
-   - Description can be `null` if not available
+   - Description should be meaningful - you can customize it based on the context
+   - Ensure proper JSON formatting with commas between entries
